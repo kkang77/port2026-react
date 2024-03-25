@@ -1,10 +1,11 @@
 #portfolio {
     width: 100%;
     margin-top: 30vh;
-    // overflow: hidden;
+    overflow: hidden;
 }
 .portfolio__inner {
     padding: 16px;
+
 
     .portfolio__title {
         width: 100%;
@@ -18,6 +19,22 @@
         border-bottom: 0.4vw solid var(--black100);
         margin-bottom: 16px;
         text-indent: -0.26vw;
+      
+       
+
+    
+        @media (max-width: 800px) {
+                width: 100%;
+                margin-bottom: 16px;
+                font-size: 30px;
+                height: auto;
+                top: 68px;
+                z-index: 1000;
+                background-color: var(--mainBg-color);
+                position: sticky;
+                left: 0;
+            }
+            
 
         em {
             font-size: 1.25rem;
@@ -29,6 +46,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 7000px;
+        margin-top: 20px;
         
 
         .portfolio__item {
@@ -37,7 +55,14 @@
             background-color: var(--sunBg100);
             padding: 2.5rem;
             margin-right: 20px;
-           
+
+            @media (max-width: 800px) {
+                    width: 400px;
+                    padding: 40px 30px;
+                    height: auto;
+                    margin-top: 50px;
+                 
+            }
 
             &.p1 {
                 background-color: var(--subBg100);
@@ -104,6 +129,8 @@
                 color: var(--black100);
                 border-bottom: 2px solid var(--black100);
                 margin-bottom: 1rem;
+
+            
             }
             .desc {
                 font-size: 1rem;
