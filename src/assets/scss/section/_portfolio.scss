@@ -29,6 +29,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 7000px;
+        
 
         .portfolio__item {
             width: 500px;
@@ -36,6 +37,7 @@
             background-color: var(--sunBg100);
             padding: 2.5rem;
             margin-right: 20px;
+           
 
             &.p1 {
                 background-color: var(--subBg100);
@@ -105,6 +107,7 @@
             }
             .desc {
                 font-size: 1rem;
+            
             }
             .site {
                 border: 1px solid var(--black100);
@@ -113,6 +116,7 @@
                 padding: 0.625rem 1.5rem;
                 margin-top: 1.5rem;
                 transition: all 0.2s;
+               
 
                 &:hover {
                     background-color: var(--black100);
