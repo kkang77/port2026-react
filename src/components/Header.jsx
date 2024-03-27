@@ -1,34 +1,14 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
-const headerNav = [
-  {
-    title: "intro",
-    url: "#intro"
-  },
-  {
-    title: "skill",
-    url: "#skill"
-  },
-  {
-    title: "site",
-    url: "#site"
-  },
-  {
-    title: "portfolio",
-    url: "#portfolio"
-  },
-  {
-    title: "contact",
-    url: "#contact"
-  }
-]
+import { headerNav } from "../constants";
+
 
 const Header = () => {
   const [show, setShow] = useState(false);
 
   const toggleMenu = () => {
       setShow((prevShow) => !prevShow);
-  };
+  }
 
 
   return (
@@ -67,6 +47,8 @@ const Header = () => {
       </div>
     </header>
   )
-}
+};
+
 
 export default Header;
+
